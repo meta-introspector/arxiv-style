@@ -17,12 +17,10 @@
 
 \title{A meta-introspector template for the \emph{arxiv} style}
 
-% Here you can change the date presented in the paper title
 \date{May 27, 2024}
 %\date{}
 
 \newif\ifuniqueAffiliation
-% Comment to use multiple affiliations variant of author block 
 \uniqueAffiliationtrue
 
 \ifuniqueAffiliation % Standard variant of author block
@@ -30,25 +28,8 @@
 	Author\\
 	Meta Introspector\\
 	\texttt{jmikedupont2@gmail.com} \\
-	%% examples of more authors
-	%% \AND
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
-	%% \And
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
-	%% \And
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
 }
 \else
-% Multiple affiliations variant of author block
 \usepackage{authblk}
 \renewcommand\Authfont{\bfseries}
 \setlength{\affilsep}{0em}
@@ -100,6 +81,26 @@ show how the source code relates to the narrative of the task,
 show how the narrative of the task relates to the meta narrative.
 Understand the programs execution via comprhensive study.
 modify a target via rotations or operations on the embedded form.
+We can see this template as being copied as the meta narrative that
+has parts replaced to create instances of it,
+in that respect it is a typeclass, that defines properties
+for instances. The meta meme is a template that is copied.
+Thus in being copied it creates more individual memes.
+
+We can see rewrites of this document
+or adding of parts to it, as further instanciantions of the meme, like a curried function.
+
+We can reorganize and rewrite section,
+add sections etc, all are symbols or structure, but all are considered to be atomic units of meaning, new prime numbers we can append to the system.
+
+In that manner the latex system becomes
+just a format or template that contains the same content as before.
+
+The template allows it to be ingested on its formal properties.
+
+the document has a cryptographic checksum, but also we can consider it have a content sum that is a polynomial
+constructed out of prime number factors.
+We can consider higher dimensional fields and galouis groups.
 
 \section{Concepts}
 \label{sec:concepts}
@@ -116,6 +117,7 @@ The Running of a program can be seen as the invocation or the copying of a meme
 and allowing it to execute.
 
 \subsection{Concepts of context}
+
 The context of execution is imagined to be in a closed world model,
 inside of a emacs editor, on a Linux server, running Debian,
 inside of a reproducible Guix bootstrap,
@@ -124,8 +126,18 @@ with root access,
 with enough storage to sample every instruction using Linux perf recording,
 in a secure and audited environment, like a DAO that is operating in a transparent manner.
 
+\subsection{The meme coin}
+
+It should be inferred that this system is
+running and capturing data as its own use case. The execution of the meme is the goal and the product of the system itself it should be understood. We can think of this as mining the meme coin. The specific version of the coin is like a NFT. The most successful instances will have the most value and get the most executions. 
+
+\subsection{Concepts of three fates}
+
 This context can be seen as a grand tapestry or tape, a woven fabric of threads
 spun by the three sisters of fate that create the thread of life.
+The weaving of a thread in a process is like writing out its path over time, each moment is captured in the tapestry.
+
+The cutting of a thread is like the killing of a process in the os. 
 
 \subsection{Concepts of narrative}
 
@@ -191,7 +203,53 @@ So in that way the instructions become templates to be interpreted.
 We can see the block or set of instructions as having a desired effect
 and we try and model it. 
 
+\subsection{Unity}
+
+There is the theory
+that there will be a unified model at some point in the future that unites all models. This model will allow the transport of facts from one model to another via unimath univalent proof paths. This topological space created by the proof is a memory struture constrained by rules that when executed acts like a forward pass.
+
+We can make a connection between the execution of a program and a proof and a neural network. We can symbolically regress the neural network values back into prime number encodings of the underlying encoding of the programs.
+
+So we can think of the finding the the prime number encodings of the code as our goal, the construction of a godel numbering, there will be many equivalent forms. we can think of finding those as a training exercise.
+
+So we consider a godel number that can reason about itself, modify itself, has operators over itself, or is its own operator, and each step of the time is prepared by and calculated by the compiler but can be seen as being controlled by the DAO or the meme itself executing biosemiotically.
+
+\subsection{AI Rewriting and Review}
+
+We can use LLMs to review this paper and rewrite sections or expand on them.
+This rewriting can be seen a continual deformation process, like a topological
+deformation. We can think of the seed document as deforming into its implementation
+via rewrites. The struturing of this workflow is guided by the document.
+In the meta meme repository you will find a large set of wikipages and issues that document various versions and forms of this meta meme. 
+
+\section{Instance}
+
+Now we imagine an instance of this idea,
+a possible representation. We ask bing to help us.
+
+\subsection{Galois Field}
+
+\paragraph{Sample idea}
+
+lets consider the asts of gcc and we can imagine a set a primes that map each tree hash code enum value into a prime number embedding, each field is another prime number, and together these produce a matrix of data we can consider as a field in a galios group
+
+\paragraph{Sample bing}
+
+We can feed the idea to bing.
+
+Your proposal to map the abstract syntax trees (ASTs) of the GNU Compiler Collection (GCC) to a prime number embedding is an intriguing concept. By associating each tree hash code enum value and field with a unique prime number, you are essentially creating a unique identifier for each component of the AST. This could be visualized as follows:
+
+Let $$ p_i $$ be the prime number associated with the $$ i^{th} $$ tree hash code enum value, and $$ q_j $$ be the prime number associated with the $$ j^{th} $$ field. Then, the matrix element $$ M_{ij} $$ could be defined as the product of these primes, $$ M_{ij} = p_i \cdot q_j $$.
+
+This matrix $$ M $$ represents a mapping from the ASTs to a set of integers. If we consider this set of integers as elements in a finite field, particularly a Galois field $$ GF(p) $$ for some prime $$ p $$, we can perform various algebraic operations under the field's addition and multiplication rules.
+
+The choice of a Galois field is particularly apt for compiler optimizations and error-checking, as it allows for the application of algebraic geometry and coding theory to improve the efficiency and reliability of the compilation process.
+
+To further explore this idea, one could use the properties of Galois fields to detect and correct errors in the AST representation or to optimize the code by identifying algebraic relations between different parts of the AST.
+
+This approach marries the discrete structure of compiler design with the continuous algebraic structures of mathematics, opening up new avenues for research and application in both fields. It's a fascinating intersection of computer science and abstract algebra.
+
 \bibliographystyle{unsrtnat}
 \bibliography{references} 
 \end{document}
-                                                                                                                                                                                                                                                                                                                                           
+                                        
